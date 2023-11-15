@@ -10,6 +10,8 @@
 
 ### 개발환경
   - vscode(html+css+js)
+  - bootstrap
+  - jquery
 
 ## 주요기능
   - 카테고리 별로 정보 위치

@@ -12,6 +12,7 @@
   - vscode
   - bootstrap
   - jquery
+### 개발 진행 상황
 
 ## 주요기능
   - 카테고리 별로 분류

@@ -1,0 +1,35 @@
+$footerBackgroundColor:#dcdcdc;
+$commontipDetailColor:#F5AAAA;
+$commontipTitleColor:#F56E6E;
+$detailSectionColor:#A30FE2;
+$backgroundColor:#ffffff;
+$sectionPartLine:#8EE1D2;
+$fontUseColor:#ffffff;
+$fontTitleColor:#9E37D1;
+$headerHeight:50px;
+$paddingHeight:55px;
+
+$zIndexFooter:100;
+$zIndexHeader:100;
+$zIndexMain:80;
+
+@mixin font($type){
+    @if($type=='main-title'){
+        font-size:0.8em;
+        color:$fontTitleColor;
+        font-weight:780;
+    }
+    @if($type=='detail-section'){
+        font-size:1.2em;
+        font-weight:800;
+        color:$fontUseColor;
+    }
+    @if($type=='Catalog' or $type=='Common-tip'){
+        font-size:1.7em;
+        font-weight:bold;
+        color:$fontUseColor;
+    }
+    @if($type=='footer'){
+        opacity:0.6;
+    }
+}

@@ -1,0 +1,91 @@
+@import "design.scss";
+
+body, h1{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    position:fixed;
+    background-color:$backgroundColor;
+    border-bottom:1px solid $sectionPartLine;
+    height:$headerHeight;
+    width:100%    
+}
+
+.title{
+    display:flex;
+    height:$headerHeight;
+}
+
+.main{
+    padding-top:$paddingHeight;
+}
+
+.detail-section{
+    background-color:$detailSectionColor;
+    @include font("detail-section");
+    padding-left:0.5em;
+    border-radius:10px;  
+}
+
+.main-title{
+    text-decoration:none;
+    @include font("main-title");
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    background-color:$backgroundColor;
+    z-index:$zIndexMain;
+    
+    .catalog{
+        border-right: 1px solid $sectionPartLine;
+    }
+
+    .article{
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .detail-catalog{
+        position:fixed;
+        padding-left:15px;
+        list-style-type:none;
+        @include font("detail-section");
+        
+        .select>a{
+            text-decoration:none;
+        }
+    }
+}
+
+.image-file{
+    width:120px;
+    height:120px;
+}
+
+#footer{
+    @include font("footer");
+    padding-left:1.3em;
+    background-color:$footerBackgroundColor;
+    height:30px;
+}
+
+.common-tip-title{
+    background-color:$commontipTitleColor;
+    @include font("Common-tip");
+    padding-left:0.5em;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    margin-bottom:0%;
+}
+
+.common-tip{
+    background-color:$commontipDetailColor;
+    padding-left:0.5em;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    margin-top:0%;
+}
